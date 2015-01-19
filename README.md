@@ -1,36 +1,12 @@
 # subtitles-downloader
 
-FIXME: description
+This application allows you to download subtitles using the SubDB (http://thesubdb.com)
 
-## Installation
-
-Download from http://example.com/FIXME.
-
-## Usage
-
-FIXME: explanation
-
-    $ java -jar subtitles-downloader-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+To get familiar with the protocol and the hash function read http://thesubdb.com/api/
 
 ## License
 
-Copyright © 2015 FIXME
+Copyright © 2015 Paweł Kłeczek
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
