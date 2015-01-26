@@ -10,8 +10,7 @@
     (let [response (http/get url {:headers user-agent})]
       (case (:status response)
         200 (success-callback response)
-        nil))
-    )
+        nil)))
 
   (defn- parse-languages
     [response]
@@ -28,3 +27,9 @@
     (do-http-action
       (str "http://sandbox.thesubdb.com/?action=search&hash=" hash)
       (fn [response] (parse-languages (:body response)))))
+
+  (defn get-subtitles
+    [hash lang]
+    (do-http-action
+      (str "http://sandbox.thesubdb.com/?action=download&hash=" hash "&language=" (name lang))
+      (fn [response] (println response))))
